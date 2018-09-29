@@ -1,0 +1,9 @@
+Record_Name,Field_Name,Field_Desc,offset,length,align,paddingChar,format,Data_Type,Validation,default_Value,Constant_Value
+MyPerson,Header,MyPerson Header,1,5,LEFT,'*',,String,,,START
+MyPerson,first name,MyPerson first name,6,10,LEFT,' ',,String,,,
+MyPerson,last name,MyPerson last name,16,10,LEFT,' ',,String,,,
+MyPerson,age,MyPerson age,26,2,LEFT,,,String,,,
+MyPerson,joiningDate,MyPerson joiningDate,28,8,LEFT,,ddMMyyyy,Date,,1012000,
+MyPerson,salary,MyPerson salary,36,8,RIGHT,,###.##,Double,,1012000,
+MyPerson,Filler,MyPerson Filler,44,22,LEFT,' ',,String,,,
+MyPerson,Footer,MyPerson Footer,66,5,LEFT,'*',,String,,,END

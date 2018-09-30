@@ -1,3 +1,4 @@
+package com.mc.utils.codegen.fileparser;
 import java.util.List;
 
 public class RecordConfig {

@@ -1,3 +1,4 @@
+package com.mc.utils.codegen.fileparser;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;

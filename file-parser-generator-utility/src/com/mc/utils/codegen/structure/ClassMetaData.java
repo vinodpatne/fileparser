@@ -15,21 +15,19 @@ public class ClassMetaData {
 
     private List<MemberMetaData> memberMetaDataList;
 
-    private List<String> importClasses;
-
     public ClassMetaData() {
     }
 
     public ClassMetaData(String className, String packageName) {
-	this.className = className;
-	this.packageName = packageName;
+        this.className = className;
+        this.packageName = packageName;
     }
 
     /**
      * @return Returns the name.
      */
     public String getClassName() {
-	return className;
+        return className;
     }
 
     /**
@@ -37,14 +35,14 @@ public class ClassMetaData {
      *            The name to set.
      */
     public void setClassName(String className) {
-	this.className = className;
+        this.className = className;
     }
 
     /**
      * @return Returns the packageName.
      */
     public String getPackageName() {
-	return packageName;
+        return packageName;
     }
 
     /**
@@ -52,14 +50,14 @@ public class ClassMetaData {
      *            The packageName to set.
      */
     public void setPackageName(String packageName) {
-	this.packageName = packageName;
+        this.packageName = packageName;
     }
 
     /**
      * @return Returns the annotationMetaData.
      */
     public List<AnnotationMetaData> getAnnotationMetaDataList() {
-	return annotationMetaDataList;
+        return annotationMetaDataList;
     }
 
     /**
@@ -67,7 +65,7 @@ public class ClassMetaData {
      *            The annotationMetaData to set.
      */
     public void setAnnotationMetaDataList(List<AnnotationMetaData> annotationMetaData) {
-	this.annotationMetaDataList = annotationMetaData;
+        this.annotationMetaDataList = annotationMetaData;
     }
 
     /**
@@ -75,17 +73,17 @@ public class ClassMetaData {
      *            The annotationMetaData to set.
      */
     public void addAnnotationMetaData(AnnotationMetaData annotationMetaData) {
-	if (annotationMetaDataList == null) {
-	    annotationMetaDataList = new ArrayList<AnnotationMetaData>();
-	}
-	this.annotationMetaDataList.add(annotationMetaData);
+        if (annotationMetaDataList == null) {
+            annotationMetaDataList = new ArrayList<AnnotationMetaData>();
+        }
+        this.annotationMetaDataList.add(annotationMetaData);
     }
 
     /**
      * @return Returns the javaDocs.
      */
     public String getJavaDocs() {
-	return javaDocs;
+        return javaDocs;
     }
 
     /**
@@ -93,14 +91,14 @@ public class ClassMetaData {
      *            The javaDocs to set.
      */
     public void setJavaDocs(String javaDocs) {
-	this.javaDocs = javaDocs;
+        this.javaDocs = javaDocs;
     }
 
     /**
      * @return Returns the memberMetaDataList.
      */
     public List<MemberMetaData> getMemberMetaDataList() {
-	return memberMetaDataList;
+        return memberMetaDataList;
     }
 
     /**
@@ -108,7 +106,7 @@ public class ClassMetaData {
      *            The memberMetaDataList to set.
      */
     public void setMemberMetaDataList(List<MemberMetaData> membersMetaDataList) {
-	this.memberMetaDataList = membersMetaDataList;
+        this.memberMetaDataList = membersMetaDataList;
     }
 
     /**
@@ -116,32 +114,10 @@ public class ClassMetaData {
      *            The annotationMetaData to set.
      */
     public void addMemberMetaData(MemberMetaData memberMetaData) {
-	if (memberMetaDataList == null) {
-	    memberMetaDataList = new ArrayList<MemberMetaData>();
-	}
-	this.memberMetaDataList.add(memberMetaData);
-    }
-
-    /**
-     * @return the importClasses
-     */
-    public final List<String> getImportClasses() {
-	return importClasses;
-    }
-
-    /**
-     * @param importClasses
-     *            the importClasses to set
-     */
-    public final void setImportClasses(List<String> importClasses) {
-	this.importClasses = importClasses;
-    }
-
-    public void addImportClass(String fullyQualifiedClassName) {
-	if (importClasses == null) {
-	    importClasses = new ArrayList<String>();
-	}
-	this.importClasses.add(fullyQualifiedClassName);
+        if (memberMetaDataList == null) {
+            memberMetaDataList = new ArrayList<MemberMetaData>();
+        }
+        this.memberMetaDataList.add(memberMetaData);
     }
 
 }

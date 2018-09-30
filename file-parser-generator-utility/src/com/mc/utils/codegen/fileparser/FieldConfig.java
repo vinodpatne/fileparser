@@ -1,3 +1,4 @@
+package com.mc.utils.codegen.fileparser;
 
 public class FieldConfig {
 
@@ -18,7 +19,7 @@ public class FieldConfig {
      * @return the recordClassName
      */
     public final String getRecordClassName() {
-	return recordClassName;
+        return recordClassName;
     }
 
     /**
@@ -26,14 +27,14 @@ public class FieldConfig {
      *            the recordClassName to set
      */
     public final void setRecordClassName(String recordName) {
-	this.recordClassName = recordName;
+        this.recordClassName = recordName;
     }
 
     /**
      * @return the fieldName
      */
     public final String getFieldName() {
-	return fieldName;
+        return fieldName;
     }
 
     /**
@@ -41,14 +42,14 @@ public class FieldConfig {
      *            the fieldName to set
      */
     public final void setFieldName(String fieldName) {
-	this.fieldName = fieldName;
+        this.fieldName = Character.toLowerCase(fieldName.charAt(0)) + fieldName.substring(1);
     }
 
     /**
      * @return the offset
      */
     public final String getOffset() {
-	return offset;
+        return offset;
     }
 
     /**
@@ -56,14 +57,14 @@ public class FieldConfig {
      *            the offset to set
      */
     public final void setOffset(String offset) {
-	this.offset = offset;
+        this.offset = offset;
     }
 
     /**
      * @return the length
      */
     public final String getLength() {
-	return length;
+        return length;
     }
 
     /**
@@ -71,14 +72,14 @@ public class FieldConfig {
      *            the length to set
      */
     public final void setLength(String length) {
-	this.length = length;
+        this.length = length;
     }
 
     /**
      * @return the align
      */
     public final String getAlign() {
-	return align;
+        return align;
     }
 
     /**
@@ -86,14 +87,14 @@ public class FieldConfig {
      *            the align to set
      */
     public final void setAlign(String align) {
-	this.align = (align != null && align.equalsIgnoreCase("RIGHT")) ? "RIGHT" : null;
+        this.align = (align != null && align.equalsIgnoreCase("RIGHT")) ? "RIGHT" : null;
     }
 
     /**
      * @return the paddingChar
      */
     public final String getPaddingChar() {
-	return paddingChar;
+        return paddingChar;
     }
 
     /**
@@ -101,14 +102,14 @@ public class FieldConfig {
      *            the paddingChar to set
      */
     public final void setPaddingChar(String paddingChar) {
-	this.paddingChar = paddingChar;
+        this.paddingChar = paddingChar;
     }
 
     /**
      * @return the format
      */
     public final String getFormat() {
-	return format;
+        return format;
     }
 
     /**
@@ -116,14 +117,14 @@ public class FieldConfig {
      *            the format to set
      */
     public final void setFormat(String format) {
-	this.format = format;
+        this.format = format;
     }
 
     /**
      * @return the dataType
      */
     public final String getDataType() {
-	return dataType;
+        return dataType;
     }
 
     /**
@@ -131,20 +132,20 @@ public class FieldConfig {
      *            the dataType to set
      */
     public final void setDataType(String dataType) {
-	if (dataType.equalsIgnoreCase("date")) {
-	    this.dataType = "java.util.Date";
-	} else if (dataType.equalsIgnoreCase("Integer")) {
-	    this.dataType = "java.lang.Integer";
-	} else {
-	    this.dataType = dataType;
-	}
+        if (dataType.equalsIgnoreCase("date")) {
+            this.dataType = "java.util.Date";
+        } else if (dataType.equalsIgnoreCase("Integer")) {
+            this.dataType = "java.lang.Integer";
+        } else {
+            this.dataType = dataType;
+        }
     }
 
     /**
      * @return the validation
      */
     public final String getValidation() {
-	return validation;
+        return validation;
     }
 
     /**
@@ -152,14 +153,14 @@ public class FieldConfig {
      *            the validation to set
      */
     public final void setValidation(String validation) {
-	this.validation = validation;
+        this.validation = validation;
     }
 
     /**
      * @return the defaultValue
      */
     public final String getDefaultValue() {
-	return defaultValue;
+        return defaultValue;
     }
 
     /**
@@ -167,14 +168,14 @@ public class FieldConfig {
      *            the defaultValue to set
      */
     public final void setDefaultValue(String defaultValue) {
-	this.defaultValue = defaultValue;
+        this.defaultValue = defaultValue;
     }
 
     /**
      * @return the constantValue
      */
     public final String getConstantValue() {
-	return constantValue;
+        return constantValue;
     }
 
     /**
@@ -182,14 +183,14 @@ public class FieldConfig {
      *            the constantValue to set
      */
     public final void setConstantValue(String constantValue) {
-	this.constantValue = constantValue;
+        this.constantValue = constantValue;
     }
 
     /**
      * @return the fieldDesc
      */
     public final String getFieldDesc() {
-	return fieldDesc;
+        return fieldDesc;
     }
 
     /**
@@ -197,6 +198,6 @@ public class FieldConfig {
      *            the fieldDesc to set
      */
     public final void setFieldDesc(String fieldDesc) {
-	this.fieldDesc = fieldDesc;
+        this.fieldDesc = fieldDesc;
     }
 }
